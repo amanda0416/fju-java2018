@@ -1,8 +1,16 @@
 package com.tom;
 
+import java.net.NetPermission;
+import java.util.Scanner;
+
 public class Hello {
 	public static void main(String[] args) {
-		Student stu = new Student("Hank", 70, 90);
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Your name:");
+		String name = scanner.nextLine();
+		System.out.println(name);
+		
+		Student stu = new Student("Simon", 70, 90);
 		stu.print();
 		
 		System.out.println(3 == 5);
@@ -16,7 +24,7 @@ public class Hello {
 		String s4 = "abc";
 		System.out.println(s3 == s4);
 
-	   /*stu.name = "Hank"; 
+	   /*stu.name = "Simon";
 		 stu.english = 70;
 		 stu.math = 90;*/
 
@@ -25,8 +33,8 @@ public class Hello {
 		// p.height = 1.65f ;
 		System.out.println(p.bmi());
 		p.hello();
-		// Person hank = new Person() ;
-		// Person jack = null ;
+		// Person simon = new Person() ;
+		// Person jenny = null ;
 
 	   /*System.out.println("Hello world!"); 
 		 String name = "Amanda" ; 
