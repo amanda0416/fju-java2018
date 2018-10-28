@@ -9,16 +9,9 @@ public class SignUp {
 		Scanner scanner = new Scanner(System.in);
 		String line = scanner.nextLine();
 		boolean adult = line.equalsIgnoreCase("Y");
-		System.out.print(adult);
-		if (adult){
-			System.out.print("Your age?");
-			int age = scanner.nextInt();
-			scanner.nextLine();
-			System.out.print("Your name?");
-			String name = scanner.nextLine();
-		    System.out.print("Your nickname?");
-		    String nickname = scanner.nextLine();
-		    System.out.println(age+"/"+name+"/"+nickname);
+		Member member = new Member(adult);
+		if (member.adult){
+			member.input();
 		}else {
 			System.out.println("Bye!");
 		}
