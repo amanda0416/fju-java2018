@@ -1,14 +1,42 @@
 package com.tom;
 
 import java.net.NetPermission;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Hello {
 	public static void main(String[] args) {
+		int w = 1;
+		while (w>0){
+			System.out.println("hahaha");
+			w = w -1 ; 
+		}
+		
+		Random random = new Random();
+		int secret = random.nextInt(100)+1;
+		System.out.println(secret);
+		
+		int n = (int)(3/5.0);
+		System.out.println(3/5.0);
+		int g = 12/7;
+		System.out.println(g);
+		int m = 12%7;
+		System.out.println(m);
+		int a = 18;
+		float b = 23.5689f;
+		String nick = "Joy";
+		System.out.printf("Hi, %s,your age: %d,bmi: %.2f\n",nick,a,b);
+		               
 		Scanner scanner = new Scanner(System.in);
+		System.out.print("Please enter temperature(C):");
+		double c = scanner.nextDouble();
+		double f = c*(9.0/5.0)+ 32;
+		System.out.printf("%.1f C = %.1f F",c,f);
+		
+		/*Scanner scanner = new Scanner(System.in);
 		System.out.print("Your name:");
 		String name = scanner.nextLine();
-		System.out.println(name);
+		System.out.println(name);*/
 		
 		Student stu = new Student("Simon", 70, 90);
 		stu.print();
