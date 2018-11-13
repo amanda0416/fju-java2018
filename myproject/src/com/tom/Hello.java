@@ -6,6 +6,11 @@ import java.util.Scanner;
 
 public class Hello {
 	public static void main(String[] args) {
+		int i;
+		for(i=0 ; i<3 ; i++){
+			System.out.println(i);
+		}
+		
 		int w = 1;
 		while (w>0){
 			System.out.println("hahaha");
@@ -38,7 +43,7 @@ public class Hello {
 		String name = scanner.nextLine();
 		System.out.println(name);*/
 		
-		Student stu = new Student("Simon", 70, 90);
+		Student stu = new Student("Simon", 90, 100);
 		stu.print();
 		
 		System.out.println(3 == 5);
@@ -53,8 +58,8 @@ public class Hello {
 		System.out.println(s3 == s4);
 
 	   /*stu.name = "Simon";
-		 stu.english = 70;
-		 stu.math = 90;*/
+		 stu.english = 90;
+		 stu.math = 100;*/
 
 		Person p = new Person(53.5f, 1.65f);
 		// p.weight = 53.5f ;
@@ -65,7 +70,7 @@ public class Hello {
 		// Person jenny = null ;
 
 	   /*System.out.println("Hello world!"); 
-		 String name = "Amanda" ; 
+		 String name = "Carlisle" ; 
 		 int age= 18 ;
 		 int schoolYear = 107 ; 
 		 long birthday = 212 ; 

@@ -11,24 +11,22 @@ public class Secret {
 		System.out.print("Please write a number(1~100):");
 		Scanner scanner = new Scanner(System.in);
 		int number = scanner.nextInt();
-		while (number!=secret) {
+		while (true) {
 			if (number <= secret) {
 				System.out.print(number+" to 100:");
-				int number1 = scanner.nextInt();
-				
+				int number1 = scanner.nextInt();	
 			}
 			if(number >= secret) {
 				System.out.print("1 to "+number+":");
-				int number2 = scanner.nextInt();
-				
+				int number2 = scanner.nextInt();	
+			}
+			if(number == secret) {
+			System.out.println("次次!!");
+			break;
 			}
 			
 		} 
-		while(number == secret) {
-			System.out.println("次次!!");
-			break;
-		}
-		
+			
 	}	
 			
 }
